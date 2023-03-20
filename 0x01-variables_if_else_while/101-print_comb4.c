@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-  *main - entry point
-  *Discription:"prints all possible different combinations of three digits"
-  *Return: always 0 (success)
+ *main - entry point
+ *Discription:"prints all possible different combinations of three digits"
+ *Return: always 0 (success)
   */
 int main(void)
 {
@@ -33,5 +33,4 @@ int main(void)
 
 	putchar('\n');
 	return (0);
-}	
-
+}
