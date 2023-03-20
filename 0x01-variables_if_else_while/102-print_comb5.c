@@ -11,7 +11,7 @@ int main(void)
 
 	for (x = 0; x <= 99; x++)
 	{
-		for (y = 0; y < 99; y++)
+		for (y = 0; y <= 99; y++)
 		{
 			if (x < y && x != y)
 			{
