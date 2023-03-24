@@ -17,6 +17,7 @@ int main(void)
 		if (num % a == 0)
 		{
 			printf("%d\n", a);
+			break;
 		}
 	}
 	return (0);
