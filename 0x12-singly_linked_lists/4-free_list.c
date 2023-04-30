@@ -1,9 +1,8 @@
 #include <stdlib.h>
 #include "lists.h"
-
 /**
  * free_list - function that frees a list_t list
- * @head: the pointer that point to the list_t list 
+ * @head: the pointer that point to the list_t list
  *
  * Return: 0
  */
