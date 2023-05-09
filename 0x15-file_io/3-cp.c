@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * main - program that copies the content of a file to another file
- * @argc: number of arguments count to be passed 
+ * @argc: number of arguments count to be passed
  * @argv: array of arguments vector
  *
  * Return: Always 0 (Success)
