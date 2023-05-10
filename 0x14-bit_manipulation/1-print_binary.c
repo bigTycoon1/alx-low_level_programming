@@ -11,16 +11,16 @@ void print_binary(unsigned long int n)
 	int x, tmp = 0;
 	unsigned long int count;
 
-	for (x = 32; x >= 0; x--)
+	for (x = 31; x >= 0; x--)
 	{
 		count = n >> x;
 
 		if (count & 1)
 		{
 			_putchar('1');
-			tmp++;
+			tmp = 1;
 		}
-		else if (tmp)
+		else if (tmp && !(count & 1)
 			_putchar('0');
 	}
 	if (!tmp)
