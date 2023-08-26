@@ -26,7 +26,7 @@ void ch_elf(unsigned char *e_ident)
 {
 	int i;
 	
-	for (int i = 0; i < 4; i++)
+	for (i = 0; i < 4; i++)
 	{
 		if (e_ident[i] != 0x7F &&
 			e_ident[i + 1] != 'E' &&
@@ -34,7 +34,8 @@ void ch_elf(unsigned char *e_ident)
 			e_ident[i + 3] != 'F')
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
-			exit(98);}
+			exit(98);
+		}
 
 	}
 }
@@ -283,7 +284,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	header = malloc(sizeof(Elf64_Ehdr));
 	if (header == NULL)
 	{
-		close_elf(fd;
+		close_elf(fd);
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
 	}
@@ -295,20 +296,5 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 		exit(98);
 	}
-}
-
-ch_elf(header->e_ident);
-	printf("ELF Header:\n");
-	pr_magic(header->e_ident);
-	pr_class(header->e_ident);
-	pr_data(header->e_ident);
-	pr_version(header->e_ident);
-	pr_osabi(header->e_ident);
-	pr_abi(header->e_ident);
-	pr_type(header->e_type, header->e_ident);
-	pr_entry(header->e_entry, header->e_ident);
-
-	free(header);
-	close_elf(fd);
 	return (0);
 }
