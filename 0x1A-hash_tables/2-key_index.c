@@ -2,7 +2,7 @@
 
 /**
  * key_index - function that gives you the index of a key.
- * @key:  the key 
+ * @key:  the key
  * @size: size of the array
  *
  * Return: index key
